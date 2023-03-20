@@ -1,5 +1,5 @@
-/* reseteo de margenes */
 
+/* reseteo de margenes */
 *{
 
     margin: 0;
@@ -16,9 +16,10 @@
 }
 
  
-  body {
+/* BODY */
+body {
     background-color: #272932;
-  }
+}
 
 
 /* NAVEGADOR */
@@ -58,7 +59,6 @@
     font-family: Poppins, sans-serif;
 }
 
-
 .header .nav-button ul {    
     display: flex;        
     list-style: none;        
@@ -76,7 +76,6 @@
     font-size: 24px;        
     
 }
-
 
 @media(max-width:550px){
  
@@ -109,13 +108,6 @@
     }
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -259,73 +251,55 @@
 
 
 
-/* PORTFOLIO PAGE */
+/* PAGE: PORTFOLIO PAGE (bootstrap) */
 
 .card-portfolio {
-
-    display: flex;  
-    margin: 10px 30px 10px 30px;    /* top right bottom left */
-    padding: 10px 10px;    
-    
-  
+    font-family: Poppins, sans-serif;  
+    padding: 10px 0px 10px 0px;
   }
   
-  
-  /* Portfolio page */
-  .card-portfolio h3 {
-  
+  .card-portfolio h2 {
     font-size: 24px;
     font-weight:900;
     color:whitesmoke;
-    font-family: Poppins, sans-serif;  
+    text-transform: uppercase;
   
   }
   
-  
-  /* Portfolio page */
   .card-portfolio p {
-  
+
     font-size: 16px;  
     color:#718096;
     padding: 10px 10px 20px 0px;
-    font-family: Poppins, sans-serif;
-    
-  
+
   }
   
-  /* Portfolio page */
   .card-portfolio label {
     border-left: 6px solid blue;
     background-color: lightskyblue;
     border-radius: 4px;    
     padding: 10px;  
+    margin-bottom: 10px;
     font-size: 14px;  
     color:#191a1d ;
-    font-family: Poppins, sans-serif;
+ 
     
   }
   
-  
-  /* Portfolio page */
   .card-portfolio ul {  
     padding-top: 5px;
   
   }
-  
   
   .card-portfolio ul li { 
     list-style: none; 
     text-decoration: none;
     font-size: 14px;  
     color:grey ;
-    font-family: Poppins, sans-serif
-  
   }
   
   .card-portfolio img {
-      
-    width: 500px;   
-    height: 350px;   
+
     border: none;  
     border-radius: 10px;
     opacity: 0.5;
@@ -337,184 +311,6 @@
   }
     
 
-
-  
-
-  /* ABOUT ME Page - Uso de Bootstrap */
-
-.card-about-travel  {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  align-items:center;
-}
-
-  
-.card-about-travel h2 {
-
-  font-family: Poppins, sans-serif;
-  color: white;
-  font-size: 38px;
-
-
-}
-
-.card-about-travel p {
-
-  font-family: Poppins, sans-serif;
-  color: gray;
-  font-size: 18px;
-
-
-}
-
-.card-about-place {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  align-items:center;
-}
-
-.card-about-place h2 {
-
-  font-family: Poppins, sans-serif;
-  color: white;
-  font-size: 38px;
-}
-
-.card-about-place p {
-
-  font-family: Poppins, sans-serif;
-  color: gray;
-  font-size: 18px;
-
-}
-
-.card-about-place iframe {
-
-  height: 300px;
-
-}
-
-.card-about-music {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  align-items:center;
-}
-
-.card-about-music h2 {
-
-  font-family: Poppins, sans-serif;
-  color: white;
-  font-size: 38px;
-
-}
-
-.card-about-music p {
-
-  font-family: Poppins, sans-serif;
-  color: gray;
-  font-size: 18px;
-
-}
-
-
-.card-about-music iframe {
-
-  height: 300px;
-
-}
-
-
-/* PAGE: CONTACT-ME */ 
-
-.form-contact {
-  width: 700px;
-  background-color: #272932;
-  margin: 40px auto; /* top=40px right=auto*/
-  border-radius:5px;
-  padding: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "contact-me    contact-me"
-                       "name          email"
-                       "phone         subject"
-                       "message       message"
-                       "button        button";
-}
-
-.form-contact h2{
-  grid-area: contact-me;
-  font-family: Poppins, sans-serif;
-  font-size: 32px;
-  font-weight: 900;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;    
-}
-
-.form-contact label {
-  font-family: Poppins, sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  display: flex;
-  flex-direction: column;
-  color:white;
-  padding: 10px;
-}
-.form-contact label input , .form-contact label textarea{
-  font-family: Poppins, sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  background-color: #272932;
-  border: none;
-  border-bottom: 1px solid white;
-  padding: 10px;
-  color: white;
-}
-.form-contact label:nth-child(2){
-  grid-area: name;
-}
-.form-contact label:nth-child(3){
-  grid-area: email;
-}
-.form-contact label:nth-child(4){
-  grid-area: phone;
-}
-.form-contact label:nth-child(5){
-  grid-area: subject;
-}
-.form-contact label:nth-child(6){
-  grid-area: message;
-}
-.form-contact button{
-  font-family: Poppins, sans-serif;
-  font-size: 20px;
-  font-weight: 800;
-  grid-area: button;
-  background-color:dimgrey;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;    
-  margin: 10px;
-
-}
-
-@media(max-width:750px){
-  .form-contact{
-      width: auto;
-      margin: 40px 0px;
-      border-radius:none;
-      grid-template-columns: 1fr;
-      grid-template-areas: "contact-me"
-                           "name"
-                           "email"
-                           "phone"
-                           "subject"
-                           "message"
-                           "button";
-  }
-}
 
 
 /* CAREER PAGE  */
@@ -669,6 +465,172 @@ font-size: 16px;
   /* Muevo h2 a la izquiera */
   .card-career h1 {
     text-align: left;
+  }
+}
+
+
+
+  /* PAGE: ABOUT ME (bootstrap) */
+
+  .card-about-travel  {
+    font-family: Poppins, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    align-items:center;
+  }
+  
+  .card-about-travel h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .card-about-travel p {
+    color: gray;
+    font-size: 18px;
+  }
+  
+
+  .card-about-place {
+    font-family: Poppins, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    align-items:center;
+  }
+  
+  .card-about-place h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .card-about-place p {
+    color: gray;
+    font-size: 18px;
+  }
+  
+  .card-about-place iframe {
+    height: 300px;
+  }
+  
+  .card-about-music {
+    font-family: Poppins, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    align-items:center;
+  }
+  
+  .card-about-music h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+  
+  }
+  
+  .card-about-music p {
+    font-family: Poppins, sans-serif;
+    color: gray;
+    font-size: 18px;
+  }
+  
+  
+  .card-about-music iframe {
+    height: 300px;
+  }
+
+
+/* PAGE: CONTACT-ME */ 
+
+.form-contact {
+  width: 700px;
+  background-color: #272932;
+  margin: 40px auto; /* top=40px right=auto*/
+  border-radius:5px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact-me    contact-me"
+                       "name          email"
+                       "phone         subject"
+                       "message       message"
+                       "button        button";
+}
+
+.form-contact h2{
+  grid-area: contact-me;
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;    
+}
+
+.form-contact label {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  padding: 10px;
+}
+.form-contact label input , .form-contact label textarea{
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  background-color: #272932;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+.form-contact label:nth-child(2){
+  grid-area: name;
+}
+.form-contact label:nth-child(3){
+  grid-area: email;
+}
+.form-contact label:nth-child(4){
+  grid-area: phone;
+}
+.form-contact label:nth-child(5){
+  grid-area: subject;
+}
+.form-contact label:nth-child(6){
+  grid-area: message;
+}
+.form-contact button{
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  grid-area: button;
+  background-color:dimgrey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;    
+  margin: 10px;
+
+}
+
+@media(max-width:750px){
+  .form-contact{
+      width: auto;
+      margin: 40px 0px;
+      border-radius:none;
+      grid-template-columns: 1fr;
+      grid-template-areas: "contact-me"
+                           "name"
+                           "email"
+                           "phone"
+                           "subject"
+                           "message"
+                           "button";
   }
 }
 
