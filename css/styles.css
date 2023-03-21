@@ -163,12 +163,14 @@ body {
     height: 450px;  
     border: none;    
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .card-presentation-buttons {
     display: flex;
     flex-direction: row;  
     justify-content: center;  
+
   }
   
 
