@@ -84,65 +84,29 @@ body {
     align-items: center;
   }
 }
-.section1 {
-  grid-area: section1;
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  justify-content: space-around;
-  align-items: start;
-  background-color: #272932;
-}
-
-.section1 .card-presentation {
-  padding: 10px 40px;
-}
-
-.section1 .card-presentation h2 {
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
-  color: grey;
-}
-
 .card-presentation h1 {
   font-family: Poppins, sans-serif;
   font-size: 42px;
   color: aliceblue;
   padding-top: 15px;
 }
-
-.section1 .card-presentation p {
+.card-presentation h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  color: grey;
+}
+.card-presentation p {
   font-family: Poppins, sans-serif;
   font-size: 18px;
   color: whitesmoke;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-.section1 .card-presentation button {
+.card-presentation button {
   background-color: black;
   color: white;
 }
-
-.section1 .card-photo {
-  background-color: #272932;
-}
-
-.section1 .card-photo img {
-  width: 400px;
-  height: 450px;
-  border: none;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.card-presentation-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.btn-talk {
+.card-presentation .btn-talk {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -159,13 +123,11 @@ body {
   transition-duration: 0.4s;
   width: 150px;
 }
-
-.btn-talk:hover {
+.card-presentation .btn-talk:hover {
   background-color: #008CBA;
   color: white;
 }
-
-.btn-cv {
+.card-presentation .btn-cv {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -182,15 +144,20 @@ body {
   transition: all 0.5s;
   width: 150px;
 }
-
-.btn-cv span {
+.card-presentation .btn-cv:hover span {
+  padding-right: 25px;
+}
+.card-presentation .btn-cv:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.card-presentation .btn-cv span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
-.btn-cv span:after {
+.card-presentation .btn-cv span:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -198,17 +165,7 @@ body {
   right: -20px;
   transition: 0.5s;
 }
-
-.btn-cv:hover span {
-  padding-right: 25px;
-}
-
-.btn-cv:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.btn-cv span a {
+.card-presentation .btn-cv span a {
   text-decoration: none;
   color: white;
 }
@@ -470,7 +427,6 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "contact-me    contact-me" "name          email" "phone         subject" "message       message" "button        button";
 }
-
 .form-contact h2 {
   grid-area: contact-me;
   font-family: Poppins, sans-serif;
@@ -481,7 +437,6 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
 .form-contact label {
   font-family: Poppins, sans-serif;
   font-size: 18px;
@@ -491,8 +446,7 @@ body {
   color: white;
   padding: 10px;
 }
-
-.form-contact label input, .form-contact label textarea {
+.form-contact label input {
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 200;
@@ -501,6 +455,28 @@ body {
   border-bottom: 1px solid white;
   padding: 10px;
   color: white;
+}
+.form-contact label textarea {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  background-color: #272932;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+.form-contact button {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  grid-area: button;
+  background-color: dimgrey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .form-contact label:nth-child(2) {
@@ -521,19 +497,6 @@ body {
 
 .form-contact label:nth-child(6) {
   grid-area: message;
-}
-
-.form-contact button {
-  font-family: Poppins, sans-serif;
-  font-size: 20px;
-  font-weight: 800;
-  grid-area: button;
-  background-color: dimgrey;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
 }
 
 @media (max-width: 750px) {
