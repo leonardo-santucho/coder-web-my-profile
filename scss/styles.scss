@@ -1,4 +1,9 @@
-@charset "UTF-8";
+$bg-color:#272932;
+$font-family: Poppins;
+
+
+
+
 /* reseteo de margenes */
 * {
   margin: 0;
@@ -18,45 +23,63 @@ body {
 
 /* NAVEGADOR */
 .navigation {
-  display: flex;
-  padding: 15px 0px;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+
+    .fa-bars {
+        display: none;
+      }
+      
+    .nav-link {
+        ul {
+            display: flex;
+            list-style: none;
+            transition: 0.5s;
+            padding-left: 0px;
+
+            li {
+                display: flex;
+
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    padding: 20px 20px 20px 0px;
+                    color: whitesmoke;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: $font-family, sans-serif;
+                  }
+
+              }
+
+            }
+        }
+
+    .nav-button {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    color: whitesmoke;
+                    font-size: 24px;
+                  }
+
+              }
+
+          }
+    }
+
 }
-.navigation .fa-bars {
-  display: none;
-}
-.navigation .nav-link ul {
-  display: flex;
-  list-style: none;
-  transition: 0.5s;
-  padding-left: 0px;
-}
-.navigation .nav-link ul li {
-  display: flex;
-}
-.navigation .nav-link ul li a {
-  display: flex;
-  text-decoration: none;
-  padding: 20px 20px 20px 0px;
-  color: whitesmoke;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: Poppins, sans-serif;
-}
-.navigation .nav-button ul {
-  display: flex;
-  list-style: none;
-}
-.navigation .nav-button ul li {
-  display: flex;
-}
-.navigation .nav-button ul li a {
-  text-decoration: none;
-  padding: 10px;
-  color: whitesmoke;
-  font-size: 24px;
-}
+
+
 
 @media (max-width: 550px) {
   .navigation .fa-bars {
@@ -215,37 +238,44 @@ body {
 
 /* PAGE: PORTFOLIO PAGE (bootstrap) */
 .card-portfolio {
-  font-family: Poppins, sans-serif;
-  padding: 10px 0px 10px 0px;
-}
-.card-portfolio h2 {
-  font-size: 24px;
-  font-weight: 900;
-  color: whitesmoke;
-  text-transform: uppercase;
-}
-.card-portfolio p {
-  font-size: 16px;
-  color: #718096;
-  padding: 10px 10px 20px 0px;
-}
-.card-portfolio label {
-  border-left: 6px solid blue;
-  background-color: lightskyblue;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #191a1d;
-}
-.card-portfolio img {
-  border: none;
-  border-radius: 10px;
-  opacity: 0.5;
-  transition: 0.5s;
-}
-.card-portfolio img:hover {
-  opacity: 1;
+    font-family: Poppins, sans-serif;
+    padding: 10px 0px 10px 0px;
+
+        h2 {
+        font-size: 24px;
+        font-weight: 900;
+        color: whitesmoke;
+        text-transform: uppercase;
+        }
+
+        p {
+            font-size: 16px;
+            color: #718096;
+            padding: 10px 10px 20px 0px;
+          }
+
+        label {
+            border-left: 6px solid blue;
+            background-color: lightskyblue;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #191a1d;
+        }
+        
+        img {
+            border: none;
+            border-radius: 10px;
+            opacity: 0.5;
+            transition: 0.5s;
+            
+            &:hover {
+                opacity: 1;
+              }
+
+          }
+          
 }
 
 /* CAREER PAGE  */
@@ -545,42 +575,49 @@ body {
     grid-template-areas: "contact-me" "name" "email" "phone" "subject" "message" "button";
   }
 }
+
+
 /* FOOTER */
 .footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* va a saltar de linea cuando se quede sin espacio */
-  justify-content: space-around;
-  align-items: center;
-  background-color: #272932;
-  margin: 20px;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  /* uso de BEM con el footer */
-}
-.footer .footer__copyright {
-  background-color: #272932;
-  font-size: 18px;
-  color: whitesmoke;
-  text-align: center;
-  font-family: lato-bold, sans-serif;
-  font-weight: 400;
-}
-.footer .footer__network {
-  background-color: #272932;
-  font-size: 24px;
-}
-.footer .footer__network__ul {
-  list-style: none;
-  display: flex;
-}
-.footer .footer__network__ul__li__a {
-  color: whitesmoke;
-  padding: 10px;
-}
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* va a saltar de linea cuando se quede sin espacio */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272932;
+    margin: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
 
+    /* uso de BEM con el footer */
+    .footer__copyright {
+        background-color: #272932;
+        font-size: 18px;
+        color: whitesmoke;
+        text-align: center;
+        font-family: lato-bold, sans-serif;
+        font-weight: 400;
+    }
+
+    .footer__network {
+        background-color: #272932;
+        font-size: 24px;
+        }
+      
+    .footer__network__ul {
+        list-style: none;
+        display: flex;
+        }
+
+    .footer__network__ul__li__a {
+        color: whitesmoke;
+        padding: 10px;
+        }
+      
+  
+}
 
 
 /*# sourceMappingURL=styles.css.map */
