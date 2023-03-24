@@ -1,0 +1,103 @@
+
+.form-contact {
+    width: 700px;
+    background-color: #272932;
+    margin: 40px auto; /* top=40px right=auto*/
+    border-radius: 5px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "contact-me    contact-me" "name          email" 
+                            "phone         subject" 
+                            "message       message" 
+                            "button        button";
+  
+    h2 {
+      grid-area: contact-me;
+      font-family: Poppins, sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    label {
+      font-family: Poppins, sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 10px;
+  
+      &:nth-child(2) {
+        grid-area: name;
+      }
+  
+      &:nth-child(3) {
+        grid-area: email;
+      }
+  
+      &:nth-child(4) {
+        grid-area: phone;
+      }
+  
+      &:nth-child(5) {
+        grid-area: subject;
+      }
+  
+      &:nth-child(6) {
+        grid-area: message;
+      }
+  
+      input {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+        background-color: #272932;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 10px;
+        color: white;
+      }
+  
+      textarea {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+        background-color: #272932;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 10px;
+        color: white;
+      }
+  
+    }
+  
+    button {
+      font-family: Poppins, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      grid-area: button;
+      background-color: dimgrey;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+    }
+    
+  }
+  
+  @media (max-width: 750px) {
+    .form-contact {
+      width: auto;
+      margin: 40px 0px;
+      border-radius: none;
+      grid-template-columns: 1fr;
+      grid-template-areas: "contact-me" "name" "email" "phone" "subject" "message" "button";
+    }
+  }
+  

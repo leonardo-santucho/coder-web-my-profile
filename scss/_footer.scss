@@ -1,0 +1,41 @@
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* va a saltar de linea cuando se quede sin espacio */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272932;
+    margin: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+
+    /* uso de BEM con el footer */
+    .footer__copyright {
+        background-color: #272932;
+        font-size: 18px;
+        color: whitesmoke;
+        text-align: center;
+        font-family: lato-bold, sans-serif;
+        font-weight: 400;
+    }
+
+    .footer__network {
+        background-color: #272932;
+        font-size: 24px;
+        }
+      
+    .footer__network__ul {
+        list-style: none;
+        display: flex;
+        }
+
+    .footer__network__ul__li__a {
+        color: whitesmoke;
+        padding: 10px;
+        }
+      
+}
+
