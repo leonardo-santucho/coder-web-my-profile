@@ -2,40 +2,36 @@
 .card-presentation {
     h1 {
         font-family: $font-family, sans-serif;
-        font-size: 42px;
-        color: aliceblue;
+        color: $font-color-white;
+        font-size: 38px;
         padding-top: 15px;
       }
     h2 {
         font-family: $font-family, sans-serif;
-        font-size: 24px;
-        color: grey;
+        color: $font-color-grey;
+        font-size: 18px;
       }
     p {
-        font-family: Poppins, sans-serif;
-        font-size: 18px;
-        color: whitesmoke;
+        font-family: $font-family, sans-serif;
+        font-size: $font-size-p;
+        color: $font-color-p;
         padding-top: 15px;
         padding-bottom: 15px;
       }
-    button {
-        background-color: black;
-        color: white;
-      }
   
     .btn-talk {
-        font-family: Poppins, sans-serif;
+        font-family: $font-family, sans-serif;
         font-weight: 500;
         font-size: 16px;
         display: inline-block;
         border: none;
-        border-radius: 20px;
-        background-color: #4CAF50; /* Green */
+        border-radius: 10px;
+        background-color: blue; 
         color: white;
         text-align: center;
         text-decoration: none;
         padding: 10px;
-        margin: 4px 2px;
+        margin: 5px;
         cursor: pointer;
         transition-duration: 0.4s;
         width: 150px;
@@ -53,14 +49,14 @@
         font-size: 16px;
         display: inline-block;
         border: none;
-        border-radius: 20px;
-        background-color: #f4511e;
+        border-radius: 10px;
+        background-color: gray;
         color: #FFFFFF;
         text-align: center;
         text-decoration: none;
         padding: 10px;
         cursor: pointer;
-        margin: 4px 2px;
+        margin:5px ;
         transition: all 0.5s;
         width: 150px;
   

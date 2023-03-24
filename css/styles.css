@@ -82,25 +82,21 @@ body {
 }
 .card-presentation h1 {
   font-family: Poppins, sans-serif;
-  font-size: 42px;
-  color: aliceblue;
+  color: whitesmoke;
+  font-size: 38px;
   padding-top: 15px;
 }
 .card-presentation h2 {
   font-family: Poppins, sans-serif;
-  font-size: 24px;
   color: grey;
+  font-size: 18px;
 }
 .card-presentation p {
   font-family: Poppins, sans-serif;
-  font-size: 18px;
-  color: whitesmoke;
+  font-size: 16px;
+  color: grey;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-.card-presentation button {
-  background-color: black;
-  color: white;
 }
 .card-presentation .btn-talk {
   font-family: Poppins, sans-serif;
@@ -108,13 +104,13 @@ body {
   font-size: 16px;
   display: inline-block;
   border: none;
-  border-radius: 20px;
-  background-color: #4CAF50; /* Green */
+  border-radius: 10px;
+  background-color: blue;
   color: white;
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  margin: 4px 2px;
+  margin: 5px;
   cursor: pointer;
   transition-duration: 0.4s;
   width: 150px;
@@ -129,14 +125,14 @@ body {
   font-size: 16px;
   display: inline-block;
   border: none;
-  border-radius: 20px;
-  background-color: #f4511e;
+  border-radius: 10px;
+  background-color: gray;
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
   padding: 10px;
   cursor: pointer;
-  margin: 4px 2px;
+  margin: 5px;
   transition: all 0.5s;
   width: 150px;
 }

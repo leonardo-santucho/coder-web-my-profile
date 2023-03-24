@@ -23,7 +23,7 @@
                     display: flex;
                     text-decoration: none;
                     padding: 20px 20px 20px 0px;
-                    color: whitesmoke;
+                    color: $font-color-white;
                     font-size: 18px;
                     font-weight: 500;
                     font-family: $font-family, sans-serif;
@@ -45,7 +45,7 @@
                 a {
                     text-decoration: none;
                     padding: 10px;
-                    color: whitesmoke;
+                    color: $font-color-white;
                     font-size: 24px;
                   }
 
@@ -63,7 +63,7 @@
             display: block;
             font-size: 32px;
             margin: 10px;
-            color: whitesmoke;
+            color: $font-color-white;
           }
 
           .fa-bars:hover + ul {
@@ -78,7 +78,7 @@
             left: -350px;
             top: 0;
             position: fixed;
-            background-color: #272932;
+            background-color: $bg-color;
             width: 250px;
             height: 100vh;
             z-index: 5;
