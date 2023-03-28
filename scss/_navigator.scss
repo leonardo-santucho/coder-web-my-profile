@@ -90,3 +90,11 @@
 
 }
 
+
+
+@each $color in black, red, yellow, blue {
+  .bg-color-#{$color} {
+    background-color: color;
+  }
+}
+

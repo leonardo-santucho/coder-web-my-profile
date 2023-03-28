@@ -1,0 +1,20 @@
+@mixin button ($bg-color, $font-color, $font-size, $font-weight, $width, $height, $transition) {
+    background-color: $bg-color;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    width: $width;
+    height: $height;
+    transition: $transition;
+    border: none;
+    font-family: $font-family, sans-serif;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+

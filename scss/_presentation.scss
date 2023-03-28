@@ -20,22 +20,8 @@
       }
   
     .btn-talk {
-        font-family: $font-family, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        display: inline-block;
-        border: none;
-        border-radius: 10px;
-        background-color: blue; 
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px;
-        margin: 5px;
-        cursor: pointer;
-        transition-duration: 0.4s;
-        width: 150px;
-        
+        @include button(blue, white, 16px, 500, 150px, none, 0);
+
         &:hover {
           background-color: #008CBA;
           color: white;
@@ -94,3 +80,9 @@
       }
   }
   
+
+  .card-skills {
+    label {
+      color: #FFFFFF;
+    }
+  }

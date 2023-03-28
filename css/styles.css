@@ -80,6 +80,22 @@ body {
     align-items: center;
   }
 }
+.bg-color-black {
+  background-color: color;
+}
+
+.bg-color-red {
+  background-color: color;
+}
+
+.bg-color-yellow {
+  background-color: color;
+}
+
+.bg-color-blue {
+  background-color: color;
+}
+
 .card-presentation h1 {
   font-family: Poppins, sans-serif;
   color: whitesmoke;
@@ -99,21 +115,23 @@ body {
   padding-bottom: 15px;
 }
 .card-presentation .btn-talk {
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
+  background-color: blue;
+  color: white;
   font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  height: none;
+  transition: 0;
+  border: none;
+  font-family: Poppins, sans-serif;
   display: inline-block;
   border: none;
   border-radius: 10px;
-  background-color: blue;
-  color: white;
   text-align: center;
   text-decoration: none;
   padding: 10px;
   margin: 5px;
   cursor: pointer;
-  transition-duration: 0.4s;
-  width: 150px;
 }
 .card-presentation .btn-talk:hover {
   background-color: #008CBA;
@@ -160,6 +178,10 @@ body {
 .card-presentation .btn-cv span a {
   text-decoration: none;
   color: white;
+}
+
+.card-skills label {
+  color: #FFFFFF;
 }
 
 .card-portfolio {
