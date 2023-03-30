@@ -181,7 +181,15 @@ body {
 }
 
 .card-skills label {
-  color: #FFFFFF;
+  background-color: none;
+  color: white;
+  font-size: 14px;
+  font-weight: none;
+  width: none;
+  height: none;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .card-portfolio {
@@ -219,9 +227,11 @@ body {
 }
 
 .card-career h1 {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins;
   color: whitesmoke;
-  font-weight: 100;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
   text-align: center;
   padding: 10px;
 }
@@ -236,16 +246,33 @@ body {
   position: relative;
   border-radius: 6px;
 }
-.card-career .timeline .content h3 {
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
+.card-career .timeline .content h2 {
+  font-family: Poppins;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
 }
-.card-career .timeline .content h3 span {
-  color: gray;
+.card-career .timeline .content h2 span {
+  font-family: Poppins;
+  color: grey;
+  font-size: 16px;
+  font-weight: none;
+  font-style: normal;
+}
+.card-career .timeline .content h3 {
+  font-family: Poppins;
+  color: grey;
+  font-size: 14px;
+  font-weight: none;
+  font-style: italic;
 }
 .card-career .timeline .content p {
-  font-family: Poppins, sans-serif;
-  font-size: 12px;
+  font-family: Poppins;
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -443,6 +470,12 @@ body {
     grid-template-areas: "contact-me" "name" "email" "phone" "subject" "message" "button";
   }
 }
+.gradiente {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, gray, black);
+}
+
 .card-about-travel {
   font-family: Poppins, sans-serif;
   padding-top: 30px;
@@ -508,7 +541,6 @@ body {
   flex-wrap: wrap; /* va a saltar de linea cuando se quede sin espacio */
   justify-content: space-around;
   align-items: center;
-  background-color: #272932;
   margin: 20px;
   position: relative;
   left: 0;
@@ -516,7 +548,6 @@ body {
   /* uso de BEM con el footer */
 }
 .footer .footer__copyright {
-  background-color: #272932;
   font-size: 18px;
   color: whitesmoke;
   text-align: center;
@@ -524,7 +555,6 @@ body {
   font-weight: 400;
 }
 .footer .footer__network {
-  background-color: #272932;
   font-size: 24px;
 }
 .footer .footer__network__ul {

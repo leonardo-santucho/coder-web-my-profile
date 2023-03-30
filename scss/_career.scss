@@ -4,9 +4,7 @@
 .card-career {
 
     h1 {
-        font-family: $font-family, sans-serif;
-        color: $font-color-white;
-        font-weight: 100;
+        @include title($font-family, $font-color-white, 48px, 800, normal);
         text-align: center;
         padding: 10px;
     }
@@ -24,17 +22,23 @@
             position: relative;
             border-radius: 6px;
 
-            h3 {
-                font-family: $font-family, sans-serif;
-                font-size: 16px;
+            h2 {
+              @include title($font-family, $font-color-black, 18px, bold, normal);
+                
                 span {
-                    color: gray;
+                  @include title($font-family, $font-color-grey, 16px, none, normal);
                 }
               }
 
+            h3 {
+              @include title($font-family, $font-color-grey, 14px, none, italic);
+            }
+
             p {
-                font-family: Poppins, sans-serif;
-                font-size: 12px;
+                
+                // font-family: Poppins, sans-serif;
+                // font-size: 12px;
+                @include text($font-family, $font-color-black, 14px, 300, normal);
             }
               
         }
@@ -122,6 +126,7 @@
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
+  //  left: -12px;
 }
 
 

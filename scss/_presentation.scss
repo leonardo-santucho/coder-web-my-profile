@@ -83,6 +83,6 @@
 
   .card-skills {
     label {
-      color: #FFFFFF;
+      @include label (none, white, 14px, none, none, none);
     }
   }

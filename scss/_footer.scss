@@ -6,7 +6,6 @@
     flex-wrap: wrap; /* va a saltar de linea cuando se quede sin espacio */
     justify-content: space-around;
     align-items: center;
-    background-color: #272932;
     margin: 20px;
     position: relative;
     left: 0;
@@ -14,7 +13,6 @@
 
     /* uso de BEM con el footer */
     .footer__copyright {
-        background-color: #272932;
         font-size: 18px;
         color: whitesmoke;
         text-align: center;
@@ -23,7 +21,6 @@
     }
 
     .footer__network {
-        background-color: #272932;
         font-size: 24px;
         }
       
