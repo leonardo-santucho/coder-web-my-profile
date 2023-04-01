@@ -1,0 +1,65 @@
+<div class="timeline">
+    <div class="container1 left">
+    <div class="content">
+        <h2>IT Manager<span> - Mediabrands</span></h2>
+        <h3>sept. 2021 - actualidad · 1 año 6 meses</h3>
+        <p>Responsable de gestionar los servicios tecnológicos del área de Sistemas del mercado local.
+        Ejecución de proyectos tecnológicos globales y regionales alineando la estrategia de IT al negocio.
+        </p>
+        <!-- <p class=""><em>Aptitudes: </em>Team Building · Office365 · SharePoint · Asana · Microsoft Azure · Problem Solving · IT Strategy · IT Transformation · Negotation · Cloud Computing · IT Service Management · Team Leadership</p> -->
+    </div>
+    </div>
+    <div class="container1 right">
+    <div class="content">
+        <h2>IT Technical Lead<span>- IUDÚ</span></h2>
+        <h3>jul. 2020 - jul. 2021 · 1 año 1 mes</h3>
+        <p>Responsable del Equipo Técnico del Squad de Seguros & Servicios planificando y gestionado expectativas con Product Owners & Stakeholders respecto al scope, planes y OKRs.
+        Gestionar los principales impedimentos técnicos de los miembros del Equipo. Uso de Jira, Kanban y Slack para el seguimiento de las tareas.
+        <!-- <p class="aptitudes"><em>Aptitudes: </em>Leadership Development · Agile Project Management · Requirements Analysis · Incident Management · Team Motivation · AGILE · Scrum · Software Architecture · Slack · Kanban · Project Management · Agile Leadership · JIRA · Trello</p> -->
+    </div>
+    </div>
+    <div class="container1 left">
+    <div class="content">
+        <h2>IT Business Partner<span> - Supervielle</span></h2>
+        <h3>ene. 2019 - jul. 2020 · 1 año 7 mes</h3>
+        <p>Socio tecnológico y aliado estratégico con el objetivo de generar valor al negocio mediante la gestión de los servicios de tecnología, alineando la estrategia de la Compañía con el área de IT.
+            Sugerir y proponer soluciones tecnológicas en base a los requerimientos del negocio, considerando las restricciones previstas, el cuadro normativo en el caso que aplicase, y los planes estratégicos.
+        <!-- <p class="aptitudes"><em>Aptitudes: </em>Agile Project Management · Requirements Analysis · Incident Management · Agile Methodologies · Software Solution Assessments · Project Management · Agile Leadership</p> -->
+    </div>
+    </div>
+    <div class="container1 right">
+    <div class="content">
+        <h2>Head of Software Developer <span> - Supervielle</span></h2>
+        <h3>ene. 2014 - jul. 2018 · 5 años</h3>
+        <p>Responsable del área de Desarrollo gestionando los Equipos Técnicos y Software Factory para el soporte, mantenimiento y mejora continua de los aplicaciones.</p>
+        <!-- <p class="aptitudes"><em>Aptitudes: </em>Team Building · Leadership Development · Agile Project Management · Requirements Analysis · Incident Management · Agile Methodologies · ITIL · Budget management · Internal Audits · .NET Framework · Project Management · SQL · Oracle</p> -->
+    </div>
+    </div>
+    <div class="container1 left">
+    <div class="content">
+        <h2>IT Project Lead<span> - Supervielle</span></h2>
+        <h3>ene. 2012 - dic. 2013 · 2 años</h3>
+        <p>Responsable de Equipo técnico y gestión  de Software Factory para soporte, mantenimiento y mejora continua de aplicaciones. 
+            Análisis, Diseño y Definición de Arquitectura de Sistemas Informáticos. 
+        </p>
+        <!-- <p class="aptitudes"><em>Aptitudes: </em>Leadership Development · Agile Project Management · Requirements Analysis · ITIL · .NET Framework · Project Management · SQL · Oracle · Visual Basic .NET (NET)</p> -->
+    </div>
+    </div>
+    <div class="container1 right">
+    <div class="content">
+        <h2>IT Project Lead<span> - Tarjeta Automatica</span></h2>
+        <h3>feb. 2016 - ene. 2012 · 6 años</h3>
+        <p>Responsable de Desarrollo de Software en cual lideré un Equipo de Trabajo para la migración del Core de Tarjeta de Crédito con procesamiento propio. 
+            Gestión de Proyectos, relevamiento y seguimiento de Proyectos con clientes internos de distintas áreas, Planificación de tareas, elaboración y ejecución de Plan de Proyectos.</p>
+        <!-- <p class="aptitudes"><em>Aptitudes: </em>Requirements Analysis · Software Devolpment · .NET Framework · ASP.NET · C# · SQL Server Integration Services (SSIS) · Transact-SQL (T-SQL) · Project Management · SQL · VB.NET · .NET framework · Visual Basic .NET (NET)</p>hum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p> -->
+    </div>
+    </div>
+    <div class="container1 left">
+        <div class="content">
+            <h2>Software Developer<span> - Intelektron</span></h2>                
+            <h3>jun. 2005 - dic. 2006 · 1 año 7 meses</h3>
+            <p>Análisis y desarrollo de software orientados a brindar soluciones de control de accesos y asistencia utilizando herramientas de programación; Visual Basic 6.0 y SQL Server.</p>
+        <!-- <p class="aptitudes"><em>Aptitudes: </em>Aptitudes: Requirements Analysis · Software Devolpment · Documentation · Crystal Reports · QA · Problem Solving · Microsoft SQL Server · SQL · Visual Basic</p> -->
+        </div>
+    </div>
+</div>
