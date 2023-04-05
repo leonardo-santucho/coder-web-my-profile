@@ -36,8 +36,6 @@
 
             p {
                 
-                // font-family: Poppins, sans-serif;
-                // font-size: 12px;
                 @include text($font-family, $font-color-black, 14px, 300, normal);
             }
               

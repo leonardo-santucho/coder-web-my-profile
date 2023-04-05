@@ -1,36 +1,15 @@
-
-
 .card-portfolio {
-    font-family: Poppins, sans-serif;
-    padding: 10px 0px 10px 0px;
-
         h2 {
-        font-size: 24px;
-        font-weight: 900;
-        color: whitesmoke;
-        text-transform: uppercase;
+            @include title($font-family, $font-color-white, 32px, bold, normal);
+            text-transform: uppercase;
         }
 
         p {
-            font-size: 16px;
-            color: #718096;
-            padding: 10px 10px 20px 0px;
+            @include text($font-family, $font-color-grey, 16px, 300, normal);
           }
 
-        label {
-            border-left: 6px solid blue;
-            background-color: lightskyblue;
-            border-radius: 4px;
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #191a1d;
-        }
-        
         img {
-            border: none;
-            border-radius: 10px;
-            opacity: 0.5;
+            @include image(normal, 10px, 0.5);
             transition: 0.5s;
             
             &:hover {
@@ -38,5 +17,21 @@
               }
 
           }
+
+        .technology {
+          i {
+            @include icon($font-color-white, 24px);
+            padding: 5px;
+          }
+          p {
+            @include text($font-family, $font-color-white, 16px, bold, normal);
+            padding: 5px;
+            margin: 0;
+          }
+        }
+        
+        
           
 }
+
+

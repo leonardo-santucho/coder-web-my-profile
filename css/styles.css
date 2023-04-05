@@ -179,6 +179,10 @@ body {
   text-decoration: none;
   color: white;
 }
+.card-presentation .divider {
+  margin-top: 15px;
+  border-top: 1px solid #bbb;
+}
 
 .card-skills label {
   background-color: none;
@@ -192,38 +196,43 @@ body {
   margin-bottom: 5px;
 }
 
-.card-portfolio {
-  font-family: Poppins, sans-serif;
-  padding: 10px 0px 10px 0px;
-}
 .card-portfolio h2 {
-  font-size: 24px;
-  font-weight: 900;
+  font-family: Poppins;
   color: whitesmoke;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
   text-transform: uppercase;
 }
 .card-portfolio p {
+  font-family: Poppins;
+  color: grey;
   font-size: 16px;
-  color: #718096;
-  padding: 10px 10px 20px 0px;
-}
-.card-portfolio label {
-  border-left: 6px solid blue;
-  background-color: lightskyblue;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #191a1d;
+  font-weight: 300;
+  font-style: normal;
 }
 .card-portfolio img {
-  border: none;
+  border: normal;
   border-radius: 10px;
   opacity: 0.5;
   transition: 0.5s;
 }
 .card-portfolio img:hover {
   opacity: 1;
+}
+.card-portfolio .technology i {
+  color: whitesmoke;
+  font-size: 24px;
+  padding: 5px;
+}
+.card-portfolio .technology p {
+  font-family: Poppins;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  padding: 5px;
+  margin: 0;
 }
 
 .card-career h1 {
@@ -396,13 +405,13 @@ body {
 }
 .form-contact h2 {
   grid-area: contact-me;
-  font-family: Poppins, sans-serif;
-  font-size: 32px;
-  font-weight: 900;
-  color: white;
+  font-family: Poppins;
+  color: whitesmoke;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
   padding: 10px;
   text-align: center;
-  text-transform: uppercase;
 }
 .form-contact label {
   font-family: Poppins, sans-serif;
@@ -535,16 +544,16 @@ body {
 }
 
 .footer {
-  grid-area: footer;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* va a saltar de linea cuando se quede sin espacio */
+  flex-shrink: 0;
   justify-content: space-around;
   align-items: center;
-  margin: 20px;
+  margin: 20px 0px 0px 0px;
   position: relative;
-  left: 0;
   bottom: 0;
+  width: 100%;
   /* uso de BEM con el footer */
 }
 .footer .footer__copyright {
@@ -564,6 +573,18 @@ body {
 .footer .footer__network__ul__li__a {
   color: whitesmoke;
   padding: 10px;
+}
+
+.divider-small {
+  border-top: 1px solid #bbb;
+}
+
+.divider-medium {
+  border-top: 5px solid #bbb;
+}
+
+.divider-large {
+  border-top: 10px solid #bbb;
 }
 
 

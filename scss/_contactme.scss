@@ -14,13 +14,11 @@
   
     h2 {
       grid-area: contact-me;
-      font-family: Poppins, sans-serif;
-      font-size: 32px;
-      font-weight: 900;
-      color: white;
+      @include title($font-family, $font-color-white, 48px, 800, normal);
       padding: 10px;
       text-align: center;
-      text-transform: uppercase;
+
+  
     }
   
     label {

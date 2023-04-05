@@ -45,3 +45,14 @@
     font-weight: $weight;
     font-style: $style;
 }
+
+@mixin image($border, $border-radius, $opacity){
+    border: $border;
+    border-radius: $border-radius;
+    opacity: $opacity;
+}
+
+@mixin icon($color, $size){
+    color: $color;
+    font-size: $size;
+}
