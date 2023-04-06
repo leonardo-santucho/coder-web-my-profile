@@ -1,37 +1,36 @@
 .card-portfolio {
-        h2 {
-            @include title($font-family, $font-color-white, 32px, bold, normal);
-            text-transform: uppercase;
-        }
+    margin-top: 10px;
 
-        p {
-            @include text($font-family, $font-color-grey, 16px, 300, normal);
-          }
+    h2 {
+        @include title($font-family, $font-color-white, 32px, bold, normal);
+        text-transform: uppercase;
+    }
 
-        img {
-            @include image(normal, 10px, 0.5);
-            transition: 0.5s;
-            
-            &:hover {
-                opacity: 1;
-              }
+    p {
+        @include text($font-family, $font-color-grey, 16px, 300, normal);
+      }
 
-          }
-
-        .technology {
-          i {
-            @include icon($font-color-white, 24px);
-            padding: 5px;
-          }
-          p {
-            @include text($font-family, $font-color-white, 16px, bold, normal);
-            padding: 5px;
-            margin: 0;
-          }
-        }
+    img {
+        @include image(normal, 10px, 0.5);
+        transition: 0.5s;
         
-        
-          
+        &:hover {
+            opacity: 1;
+          }
+
+      }
+
+    .technology {
+      i {
+        @include icon($font-color-white, 24px);
+        padding: 5px;
+      }
+      p {
+        @include text($font-family, $font-color-white, 16px, bold, normal);
+        padding: 5px;
+        margin: 0;
+      }
+    }         
 }
 
 

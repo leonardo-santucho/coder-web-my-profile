@@ -196,6 +196,9 @@ body {
   margin-bottom: 5px;
 }
 
+.card-portfolio {
+  margin-top: 10px;
+}
 .card-portfolio h2 {
   font-family: Poppins;
   color: whitesmoke;
