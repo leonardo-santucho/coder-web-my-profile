@@ -197,12 +197,12 @@ body {
 }
 
 .card-portfolio {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .card-portfolio h2 {
   font-family: Poppins;
   color: whitesmoke;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
@@ -226,6 +226,8 @@ body {
 .card-portfolio .technology i {
   color: whitesmoke;
   font-size: 24px;
+  width: 48px;
+  text-align: left;
   padding: 5px;
 }
 .card-portfolio .technology p {
@@ -560,13 +562,15 @@ body {
   /* uso de BEM con el footer */
 }
 .footer .footer__copyright {
-  font-size: 18px;
+  font-family: lato-bold;
   color: whitesmoke;
-  text-align: center;
-  font-family: lato-bold, sans-serif;
+  font-size: 16px;
   font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 .footer .footer__network {
+  color: whitesmoke;
   font-size: 24px;
 }
 .footer .footer__network__ul {
@@ -579,6 +583,7 @@ body {
 }
 
 .divider-small {
+  margin: 5px;
   border-top: 1px solid #bbb;
 }
 
