@@ -42,7 +42,7 @@
   
 }
 
-
+/* Logica para ajustar el timeline <> 600px */
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
@@ -121,9 +121,6 @@
   left: -13px;
   //  left: -12px;
 }
-
-
-
 
 
 

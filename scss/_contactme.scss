@@ -16,13 +16,11 @@
       @include title($font-family, $font-color-white, 48px, 800, normal);
       padding: 10px;
       text-align: center;
-
   
     }
   
     label {
-      @include label($bg-color, $font-color-white, 18px, 200, none, none);
-      font-family: $font-family;
+      @include label($font-family, $font-color-white, 18px, 200, none, none, $bg-color);
       display: flex;
       flex-direction: column;
       padding: 10px;
@@ -74,7 +72,5 @@
   }
   
 .gradiente{
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(circle, gray, black);
+  @include gradient-radial(100%, 100%, circle, gray, black);
 }

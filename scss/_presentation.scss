@@ -1,20 +1,17 @@
 
 .card-presentation {
+
     h1 {
-        font-family: $font-family, sans-serif;
-        color: $font-color-white;
-        font-size: 38px;
-        padding-top: 15px;
+      @include title($font-family, $font-color-white, 38px, 600, bold);
+      padding-top: 15px;
       }
+
     h2 {
-        font-family: $font-family, sans-serif;
-        color: $font-color-grey;
-        font-size: 18px;
+        @include title($font-family, $font-color-grey, 18px, none, none);
       }
+
     p {
-        font-family: $font-family, sans-serif;
-        font-size: $font-size-p;
-        color: $font-color-p;
+        @include text($font-family, $font-color-p, 16px, none, none);
         padding-top: 15px;
         padding-bottom: 15px;
       }
@@ -30,37 +27,24 @@
       }
   
     .btn-cv {
-        font-family: Poppins, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        display: inline-block;
-        border: none;
-        border-radius: 10px;
-        background-color: gray;
-        color: #FFFFFF;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px;
-        cursor: pointer;
-        margin:5px ;
+        @include button(gray, white, 16px, 500, 150px, none, 0);
         transition: all 0.5s;
-        width: 150px;
-  
+
         &:hover span {
           padding-right: 25px;
         }
-  
+
         &:hover span:after {
           opacity: 1;
           right: 0;
         }
-  
+
         span {
           cursor: pointer;
           display: inline-block;
           position: relative;
           transition: 0.5s;
-  
+
           &:after {
             content: "»";
             position: absolute;
@@ -69,25 +53,21 @@
             right: -20px;
             transition: 0.5s;
           }
-  
+
           a {
             text-decoration: none;
             color: white;
           }
-  
+
         }
-  
+
       }
-
-    .divider {
-        margin-top: 15px;
-        border-top: 1px solid #bbb;
-    }
   }
   
 
-  .card-skills {
+.card-skills {
+  
     label {
-      @include label (none, white, 14px, none, none, none);
+      @include label ($font-family, $font-color-white, 14px, none, none, none, none);
     }
-  }
+}

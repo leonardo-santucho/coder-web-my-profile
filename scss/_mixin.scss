@@ -18,13 +18,14 @@
     cursor: pointer;
 }
 
-@mixin label($bg-color, $font-color, $font-size, $font-weight, $width, $height) {
-    background-color: $bg-color;
-    color: $font-color;
-    font-size: $font-size;
-    font-weight: $font-weight;
+@mixin label($family, $color, $size, $weight, $width, $height, $bg-color) {
+    font-family: $family;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
     width: $width;
     height: $height;
+    background-color: $bg-color;
     padding: 0px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -50,6 +51,12 @@
     border: $border;
     border-radius: $border-radius;
     opacity: $opacity;
+}
+
+@mixin gradient-radial($width, $height, $figure, $color1, $color2){
+    width: $width;
+    height: $height;
+    background-image: radial-gradient($figure, $color1, $color2);
 }
 
 @mixin icon($color, $size){
