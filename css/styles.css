@@ -409,6 +409,7 @@ body {
   width: 700px;
   background-color: #272932;
   margin: 40px auto; /* top=40px right=auto*/
+  margin-bottom: 150px;
   border-radius: 5px;
   padding: 40px;
   display: grid;
@@ -502,12 +503,11 @@ body {
   background-image: radial-gradient(circle, gray, black);
 }
 
-.card-about-travel, .card-about-place, .card-about-music {
+.card-about {
   padding-top: 30px;
   padding-bottom: 10px;
-  align-items: center;
 }
-.card-about-travel h2, .card-about-place h2, .card-about-music h2 {
+.card-about h2 {
   font-family: Poppins;
   color: whitesmoke;
   font-size: 32px;
@@ -515,15 +515,15 @@ body {
   font-style: bold;
   text-transform: uppercase;
 }
-.card-about-travel p, .card-about-place p, .card-about-music p {
+.card-about p {
   font-family: Poppins;
   color: grey;
   font-size: 18px;
   font-weight: none;
   font-style: none;
 }
-.card-about-travel iframe, .card-about-place iframe, .card-about-music iframe {
-  height: 300px;
+.card-about iframe {
+  height: 150px;
 }
 
 .footer {

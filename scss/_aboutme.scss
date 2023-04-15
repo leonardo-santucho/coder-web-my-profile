@@ -1,7 +1,7 @@
-.card-about-travel, .card-about-place, .card-about-music {
+.card-about  {
     padding-top: 30px;
     padding-bottom: 10px;
-    align-items: center;
+    // align-items: center;
 
     h2 {
       @include title($font-family, $font-color-white, 32px, 900, bold);
@@ -13,10 +13,9 @@
     }
 
     iframe {
-      height: 300px;
+      height: 150px;
     }
 
   }
-  
 
-  
+
