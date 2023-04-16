@@ -1,7 +1,8 @@
 .card-career {
 
     h1 {
-        @include title($font-family, $font-color-white, 48px, 800, normal);
+        @include title($font-family, $font-color-white, 48px, 700, normal);
+        text-transform: uppercase;
         text-align: center;
         padding: 10px;
     }

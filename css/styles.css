@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
 @font-face {
   font-family: lato-bold;
   src: url("../fonts//Lato-Light.ttf");
@@ -38,7 +39,7 @@ body {
   color: whitesmoke;
   font-size: 18px;
   font-weight: 500;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", "sans-serif", sans-serif;
 }
 .navigation .nav-button ul {
   display: flex;
@@ -97,22 +98,23 @@ body {
 }
 
 .card-presentation h1 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
-  font-size: 38px;
-  font-weight: 600;
-  font-style: bold;
+  font-size: 42px;
+  font-weight: 700;
+  font-style: none;
   padding-top: 15px;
+  text-transform: uppercase;
 }
 .card-presentation h2 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: grey;
   font-size: 18px;
   font-weight: none;
   font-style: none;
 }
 .card-presentation p {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: grey;
   font-size: 16px;
   font-weight: none;
@@ -129,7 +131,7 @@ body {
   height: none;
   transition: 0;
   border: none;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", "sans-serif", sans-serif;
   display: inline-block;
   border: none;
   border-radius: 10px;
@@ -152,7 +154,7 @@ body {
   height: none;
   transition: 0;
   border: none;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", "sans-serif", sans-serif;
   display: inline-block;
   border: none;
   border-radius: 10px;
@@ -190,7 +192,7 @@ body {
 }
 
 .card-skills label {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 14px;
   font-weight: none;
@@ -206,7 +208,7 @@ body {
   margin-top: 20px;
 }
 .card-portfolio h2 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 28px;
   font-weight: bold;
@@ -214,7 +216,7 @@ body {
   text-transform: uppercase;
 }
 .card-portfolio p {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: grey;
   font-size: 16px;
   font-weight: 300;
@@ -237,21 +239,22 @@ body {
   padding: 5px;
 }
 .card-portfolio .technology p {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   font-style: normal;
   padding: 5px;
   margin: 0;
 }
 
 .card-career h1 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
   text-align: center;
   padding: 10px;
 }
@@ -267,28 +270,28 @@ body {
   border-radius: 6px;
 }
 .card-career .timeline .content h2 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: black;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
 }
 .card-career .timeline .content h2 span {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: grey;
   font-size: 16px;
   font-weight: none;
   font-style: normal;
 }
 .card-career .timeline .content h3 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: grey;
   font-size: 14px;
   font-weight: none;
   font-style: italic;
 }
 .card-career .timeline .content p {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: black;
   font-size: 14px;
   font-weight: 300;
@@ -416,18 +419,19 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "contact-me    contact-me" "name          email" "phone         subject" "message       message" "button        button";
 }
-.form-contact h2 {
+.form-contact h1 {
   grid-area: contact-me;
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 48px;
-  font-weight: 800;
-  font-style: normal;
+  font-weight: 700;
+  font-style: bold;
+  text-transform: uppercase;
   padding: 10px;
   text-align: center;
 }
 .form-contact label {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 18px;
   font-weight: 200;
@@ -457,7 +461,7 @@ body {
   grid-area: message;
 }
 .form-contact label input, .form-contact label textarea {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
   font-size: 18px;
   font-weight: 200;
@@ -476,7 +480,7 @@ body {
   height: none;
   transition: none;
   border: none;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", "sans-serif", sans-serif;
   display: inline-block;
   border: none;
   border-radius: 10px;
@@ -508,15 +512,15 @@ body {
   padding-bottom: 10px;
 }
 .card-about h2 {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: whitesmoke;
-  font-size: 32px;
-  font-weight: 900;
-  font-style: bold;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: none;
   text-transform: uppercase;
 }
 .card-about p {
-  font-family: Poppins;
+  font-family: "Poppins", "sans-serif";
   color: grey;
   font-size: 18px;
   font-weight: none;
@@ -524,6 +528,7 @@ body {
 }
 .card-about iframe {
   height: 150px;
+  padding-top: 10px;
 }
 
 .footer {

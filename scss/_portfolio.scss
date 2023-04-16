@@ -28,7 +28,7 @@
         padding: 5px;
       }
       p {
-        @include text($font-family, $font-color-white, 16px, bold, normal);
+        @include text($font-family, $font-color-white, 16px, 500, normal);
         padding: 5px;
         margin: 0;
       }

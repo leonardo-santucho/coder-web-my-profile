@@ -1,10 +1,9 @@
 .card-about  {
     padding-top: 30px;
     padding-bottom: 10px;
-    // align-items: center;
 
     h2 {
-      @include title($font-family, $font-color-white, 32px, 900, bold);
+      @include title($font-family, $font-color-white, 38px, 700, none);
       text-transform: uppercase;
     }
 
@@ -14,6 +13,7 @@
 
     iframe {
       height: 150px;
+      padding-top: 10px;
     }
 
   }

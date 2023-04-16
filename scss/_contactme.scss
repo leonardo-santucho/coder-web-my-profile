@@ -12,9 +12,10 @@
                             "message       message" 
                             "button        button";
   
-    h2 {
+    h1 {
       grid-area: contact-me;
-      @include title($font-family, $font-color-white, 48px, 800, normal);
+      @include title($font-family, $font-color-white, 48px, 700, bold);
+      text-transform: uppercase;
       padding: 10px;
       text-align: center;
   

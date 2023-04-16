@@ -2,8 +2,9 @@
 .card-presentation {
 
     h1 {
-      @include title($font-family, $font-color-white, 38px, 600, bold);
+      @include title($font-family, $font-color-white, 42px, 700, none);
       padding-top: 15px;
+      text-transform: uppercase;
       }
 
     h2 {
