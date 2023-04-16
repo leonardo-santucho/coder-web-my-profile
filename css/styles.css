@@ -190,6 +190,10 @@ body {
   text-decoration: none;
   color: white;
 }
+.card-presentation img {
+  width: 60%;
+  height: 60%;
+}
 
 .card-skills label {
   font-family: "Poppins", "sans-serif";
