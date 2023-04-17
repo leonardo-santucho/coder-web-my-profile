@@ -2,7 +2,12 @@
     margin-top: 20px;
 
     h2 {
-        @include title($font-family, $font-color-white, 28px, bold, normal);
+        @if ($dark-mode) {
+          @include title($font-family, $font-color-white, 28px, bold, normal); 
+        }
+        @else {
+          @include title($font-family, $font-color-black, 28px, bold, normal);
+        }
         text-transform: uppercase;
     }
 

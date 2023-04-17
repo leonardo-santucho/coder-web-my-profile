@@ -10,10 +10,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #272932;
-}
-
 .navigation {
   display: flex;
   padding: 15px 0px;
@@ -45,13 +41,18 @@ body {
   display: flex;
   list-style: none;
 }
-.navigation .nav-button ul li {
+.navigation .nav-button ul button {
+  display: flex;
+  text-decoration: none;
+  border: none;
+}
+.navigation .nav-button ul button li {
   display: flex;
 }
-.navigation .nav-button ul li a {
+.navigation .nav-button ul button li i {
+  color: black;
   text-decoration: none;
   padding: 10px;
-  color: whitesmoke;
   font-size: 24px;
 }
 
@@ -81,22 +82,6 @@ body {
     align-items: center;
   }
 }
-.bg-color-black {
-  background-color: color;
-}
-
-.bg-color-red {
-  background-color: color;
-}
-
-.bg-color-yellow {
-  background-color: color;
-}
-
-.bg-color-blue {
-  background-color: color;
-}
-
 .card-presentation h1 {
   font-family: "Poppins", "sans-serif";
   color: whitesmoke;
@@ -213,7 +198,7 @@ body {
 }
 .card-portfolio h2 {
   font-family: "Poppins", "sans-serif";
-  color: whitesmoke;
+  color: black;
   font-size: 28px;
   font-weight: bold;
   font-style: normal;
@@ -580,6 +565,53 @@ body {
 
 .divider-large {
   border-top: 10px solid #bbb;
+}
+
+body {
+  background-color: white;
+  color: #323840;
+  transition: background 0.5s;
+}
+
+.dark-mode {
+  background-color: #272932;
+  color: white;
+}
+
+:root {
+  --col-text: #191919;
+  --col-primary-400: #e6e6e6;
+  --col-primary-500: #ccc;
+  --col-primary-600: #b3b3b3;
+}
+
+[data-theme=dark] {
+  --col-text: #dedede;
+  --col-primary-400: #3c82a3;
+  --col-primary-500: #2e647e;
+  --col-primary-600: #204659;
+}
+
+.theme-switch {
+  margin-bottom: 2rem;
+}
+
+div > div {
+  padding: 2rem;
+  color: var(--col-text);
+}
+
+div:nth-child(1) {
+  background: var(--col-primary-600);
+  transition: 0.5s;
+}
+
+div:nth-child(2) {
+  background: var(--col-primary-500);
+}
+
+div:nth-child(3) {
+  background: var(--col-primary-400);
 }
 
 

@@ -1,6 +1,14 @@
 
-body {
-    background-color: #272932;
+  body {
 
-  }
+		background-color: white;
+		color: #323840;
+		transition: background 0.5s;
+		
+	}
   
+	.dark-mode {
+	
+		background-color: #272932;
+		color: white;	
+	}
