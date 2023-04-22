@@ -74,5 +74,7 @@
   }
   
 .gradiente{
-  @include gradient-radial(100%, 100%, circle, gray, black);
+
+  @include gradient-radial(100%, 100%, circle, gray, var(--col-primary));
+ 
 }

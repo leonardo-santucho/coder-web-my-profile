@@ -1,0 +1,11 @@
+
+:root {
+  --col-text: #272932;
+  --col-primary: #{$col-primary};
+}
+
+[data-theme="dark"] {
+  --col-text: whitesmoke;
+  --col-primary: #{$col-secondary};
+}
+
