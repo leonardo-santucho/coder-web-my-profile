@@ -1,14 +1,5 @@
 
-  body {
-
-		background-color: white;
-		color: #323840;
-		transition: background 0.5s;
-		
-	}
-  
-	.dark-mode {
-	
-		background-color: #272932;
-		color: white;	
-	}
+body {
+	background-color: var(--col-primary);
+	transition: 0.5s;
+}

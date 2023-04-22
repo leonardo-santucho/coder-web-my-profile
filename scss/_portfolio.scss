@@ -2,12 +2,9 @@
     margin-top: 20px;
 
     h2 {
-        @if ($dark-mode) {
-          @include title($font-family, $font-color-white, 28px, bold, normal); 
-        }
-        @else {
-          @include title($font-family, $font-color-black, 28px, bold, normal);
-        }
+     
+        @include title($font-family, var(--col-text), 28px, bold, normal);
+        
         text-transform: uppercase;
     }
 
@@ -27,13 +24,13 @@
 
     .technology {
       i {
-        @include icon($font-color-white, 24px);
+        @include icon(var(--col-text), 24px);
         width: 48px;
         text-align:left;
         padding: 5px;
       }
       p {
-        @include text($font-family, $font-color-white, 16px, 500, normal);
+        @include text($font-family, var(--col-text), 16px, 500, normal);
         padding: 5px;
         margin: 0;
       }

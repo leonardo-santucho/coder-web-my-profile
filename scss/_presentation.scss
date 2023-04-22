@@ -2,7 +2,7 @@
 .card-presentation {
 
     h1 {
-      @include title($font-family, $font-color-white, 42px, 700, none);
+      @include title($font-family, var(--col-text), 42px, 700, none);
       padding-top: 15px;
       text-transform: uppercase;
       }
@@ -75,6 +75,6 @@
 .card-skills {
   
     label {
-      @include label ($font-family, $font-color-white, 14px, none, none, none, none);
+      @include label ($font-family, var(--col-text), 14px, none, none, none, none);
     }
 }

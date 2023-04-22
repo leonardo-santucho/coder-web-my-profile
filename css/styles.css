@@ -32,7 +32,7 @@
   display: flex;
   text-decoration: none;
   padding: 20px 20px 20px 0px;
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 18px;
   font-weight: 500;
   font-family: "Poppins", "sans-serif", sans-serif;
@@ -41,19 +41,48 @@
   display: flex;
   list-style: none;
 }
-.navigation .nav-button ul button {
-  display: flex;
-  text-decoration: none;
-  border: none;
+.navigation .nav-button ul .toggle-switch {
+  position: relative;
+  width: 60px;
 }
-.navigation .nav-button ul button li {
-  display: flex;
+.navigation .nav-button ul label {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: #28292c;
+  border-radius: 50px;
+  cursor: pointer;
 }
-.navigation .nav-button ul button li i {
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 24px;
+.navigation .nav-button ul input {
+  position: absolute;
+  display: none;
+}
+.navigation .nav-button ul .slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.navigation .nav-button ul input:checked ~ .slider {
+  background-color: #d8dbe0;
+}
+.navigation .nav-button ul .slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: inset 10px -1px 0px 0px #d8dbe0;
+  background-color: #28292c;
+  transition: 0.3s;
+}
+.navigation .nav-button ul input:checked ~ .slider::before {
+  transform: translateX(20px);
+  background-color: #28292c;
+  box-shadow: none;
 }
 
 @media (max-width: 550px) {
@@ -61,7 +90,7 @@
     display: block;
     font-size: 32px;
     margin: 10px;
-    color: whitesmoke;
+    color: var(--col-text);
   }
   .navigation .fa-bars:hover + ul {
     left: 0;
@@ -73,7 +102,7 @@
     left: -350px;
     top: 0;
     position: fixed;
-    background-color: #272932;
+    background-color: var(--col-primary);
     width: 250px;
     height: 100vh;
     z-index: 5;
@@ -84,7 +113,7 @@
 }
 .card-presentation h1 {
   font-family: "Poppins", "sans-serif";
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 42px;
   font-weight: 700;
   font-style: none;
@@ -182,7 +211,7 @@
 
 .card-skills label {
   font-family: "Poppins", "sans-serif";
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 14px;
   font-weight: none;
   width: none;
@@ -198,7 +227,7 @@
 }
 .card-portfolio h2 {
   font-family: "Poppins", "sans-serif";
-  color: black;
+  color: var(--col-text);
   font-size: 28px;
   font-weight: bold;
   font-style: normal;
@@ -221,7 +250,7 @@
   opacity: 1;
 }
 .card-portfolio .technology i {
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 24px;
   width: 48px;
   text-align: left;
@@ -229,7 +258,7 @@
 }
 .card-portfolio .technology p {
   font-family: "Poppins", "sans-serif";
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -239,7 +268,7 @@
 
 .card-career h1 {
   font-family: "Poppins", "sans-serif";
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
@@ -493,7 +522,7 @@
 .gradiente {
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, gray, black);
+  background-image: radial-gradient(circle, gray, var(--col-primary));
 }
 
 .card-about {
@@ -502,7 +531,7 @@
 }
 .card-about h2 {
   font-family: "Poppins", "sans-serif";
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 38px;
   font-weight: 700;
   font-style: none;
@@ -535,14 +564,14 @@
 }
 .footer .footer__copyright {
   font-family: lato-bold;
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   text-align: center;
 }
 .footer .footer__network {
-  color: whitesmoke;
+  color: var(--col-text);
   font-size: 24px;
 }
 .footer .footer__network__ul {
@@ -550,7 +579,7 @@
   display: flex;
 }
 .footer .footer__network__ul__li__a {
-  color: whitesmoke;
+  color: var(--col-text);
   padding: 10px;
 }
 
@@ -568,50 +597,18 @@
 }
 
 body {
-  background-color: white;
-  color: #323840;
-  transition: background 0.5s;
-}
-
-.dark-mode {
-  background-color: #272932;
-  color: white;
-}
-
-:root {
-  --col-text: #191919;
-  --col-primary-400: #e6e6e6;
-  --col-primary-500: #ccc;
-  --col-primary-600: #b3b3b3;
-}
-
-[data-theme=dark] {
-  --col-text: #dedede;
-  --col-primary-400: #3c82a3;
-  --col-primary-500: #2e647e;
-  --col-primary-600: #204659;
-}
-
-.theme-switch {
-  margin-bottom: 2rem;
-}
-
-div > div {
-  padding: 2rem;
-  color: var(--col-text);
-}
-
-div:nth-child(1) {
-  background: var(--col-primary-600);
+  background-color: var(--col-primary);
   transition: 0.5s;
 }
 
-div:nth-child(2) {
-  background: var(--col-primary-500);
+:root {
+  --col-text: #272932;
+  --col-primary: whitesmoke;
 }
 
-div:nth-child(3) {
-  background: var(--col-primary-400);
+[data-theme=dark] {
+  --col-text: whitesmoke;
+  --col-primary: #272932;
 }
 
 

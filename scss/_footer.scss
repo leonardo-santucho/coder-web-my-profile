@@ -12,12 +12,12 @@
 
     /* uso de BEM con el footer */
     .footer__copyright {
-        @include text ($font-family-lato-bold, $font-color-white, 16px, 400, normal);
+        @include text ($font-family-lato-bold, var(--col-text), 16px, 400, normal);
         text-align: center;
         }
 
     .footer__network {
-        @include icon($font-color-white, 24px)
+        @include icon(var(--col-text), 24px)
         }
       
     .footer__network__ul {
@@ -26,7 +26,7 @@
         }
 
     .footer__network__ul__li__a {
-        color: $font-color-white;
+        color: var(--col-text);
         padding: 10px;
         }
       
