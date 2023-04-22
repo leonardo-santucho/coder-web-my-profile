@@ -41,48 +41,23 @@
   display: flex;
   list-style: none;
 }
-.navigation .nav-button ul .toggle-switch {
-  position: relative;
-  width: 60px;
+.navigation .nav-button ul li {
+  display: flex;
 }
-.navigation .nav-button ul label {
-  position: absolute;
-  width: 100%;
-  height: 30px;
-  background-color: #28292c;
-  border-radius: 50px;
-  cursor: pointer;
+.navigation .nav-button ul li input {
+  margin-right: 5px;
 }
-.navigation .nav-button ul input {
-  position: absolute;
-  display: none;
-}
-.navigation .nav-button ul .slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
+.navigation .nav-button ul li::before {
   transition: 0.3s;
 }
-.navigation .nav-button ul input:checked ~ .slider {
-  background-color: #d8dbe0;
-}
-.navigation .nav-button ul .slider::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 8px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  box-shadow: inset 10px -1px 0px 0px #d8dbe0;
-  background-color: #28292c;
-  transition: 0.3s;
-}
-.navigation .nav-button ul input:checked ~ .slider::before {
-  transform: translateX(20px);
-  background-color: #28292c;
-  box-shadow: none;
+.navigation .nav-button ul li label {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 20px 20px 0px;
+  color: var(--col-text);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", "sans-serif", sans-serif;
 }
 
 @media (max-width: 550px) {
@@ -207,8 +182,12 @@
 .card-presentation img {
   width: 60%;
   height: 60%;
+  filter: grayscale(10%);
 }
 
+.card-skills {
+  padding-top: 10px;
+}
 .card-skills label {
   font-family: "Poppins", "sans-serif";
   color: var(--col-text);
@@ -248,6 +227,9 @@
 }
 .card-portfolio img:hover {
   opacity: 1;
+}
+.card-portfolio .technology {
+  padding-bottom: 10px;
 }
 .card-portfolio .technology i {
   color: var(--col-text);

@@ -23,6 +23,8 @@
       }
 
     .technology {
+      padding-bottom: 10px;
+      
       i {
         @include icon(var(--col-text), 24px);
         width: 48px;
