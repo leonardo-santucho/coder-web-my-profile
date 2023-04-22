@@ -222,7 +222,7 @@
 .card-portfolio img {
   border: normal;
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.5s;
 }
 .card-portfolio img:hover {
