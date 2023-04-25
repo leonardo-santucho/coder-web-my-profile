@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+ 
+        <style>
+            :root {
+            --light: #d8dbe0;
+            --dark: #28292c;
+            --link: rgb(27, 129, 112);
+            --link-hover: rgb(24, 94, 82);
+            }
+
+            body {
+            background-color: #cfafaf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            }
+
+            .toggle-switch {
+            position: relative;
+            width: 60px;
+            }
+
+            label {
+            position: absolute;
+            width: 100%;
+            height: 35px;
+            background-color: var(--dark);
+            border-radius: 50px;
+            cursor: pointer;
+            }
+
+            input {
+            position: absolute;
+            display: none;
+            }
+
+            .slider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            transition: 0.3s;
+            }
+
+            input:checked ~ .slider {
+            background-color: var(--light);
+            }
+
+            .slider::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            width: 26px; 
+            height: 26px;
+            border-radius: 50%;
+            box-shadow: inset 7px -4px 0px 0px var(--light);
+            background-color: var(--dark);
+            transition: 0.3s;
+            }
+
+            input:checked ~ .slider::before {
+            transform: translateX(18px);
+            background-color: var(--dark);
+            box-shadow: none;
+            }
+
+         
+
+        </style>
+
+    
+
+    </head>
+    <body>
+        <header>
+        <nav class="navigation">
+            <div class="nav-link">                
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./portfolio.html">Proyectos</a></li>
+                    <li><a href="./career.html">Carrera</a></li>
+                    <li><a href="./about-me.html">Acerca</a></li>
+                    <li><a href="./contact-me.html">Contacto</a></li>
+    
+                </ul>
+            </div>
+    
+            <div class="nav-button">
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul>    
+            </div>    
+        </nav>
+    </header>
+        <div class = 'toggle-switch'>
+            <label>
+                <input type = 'checkbox'>
+                <span class = 'slider'></span>
+            </label>
+        </div>
+    </body>
+</html>

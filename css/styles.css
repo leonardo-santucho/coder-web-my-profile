@@ -10,6 +10,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+
 .navigation {
   display: flex;
   padding: 15px 0px;
@@ -37,27 +44,46 @@
   font-weight: 500;
   font-family: "Poppins", "sans-serif", sans-serif;
 }
-.navigation .nav-button ul {
-  display: flex;
-  list-style: none;
+.navigation .nav-button .toggle-switch {
+  position: relative;
+  width: 60px;
 }
-.navigation .nav-button ul li {
-  display: flex;
+.navigation .nav-button .toggle-switch label {
+  width: 100%;
+  height: 32px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
 }
-.navigation .nav-button ul li input {
-  margin-right: 5px;
+.navigation .nav-button .toggle-switch input {
+  display: none;
 }
-.navigation .nav-button ul li::before {
+.navigation .nav-button .toggle-switch .slider {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  border-radius: 50px;
   transition: 0.3s;
 }
-.navigation .nav-button ul li label {
-  display: flex;
-  text-decoration: none;
-  padding: 20px 20px 20px 0px;
-  color: var(--col-text);
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Poppins", "sans-serif", sans-serif;
+.navigation .nav-button .toggle-switch input:checked ~ .slider {
+  background-color: var(--light);
+}
+.navigation .nav-button .toggle-switch .slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: inset 7px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  transition: 0.3s;
+}
+.navigation .nav-button .toggle-switch input:checked ~ .slider::before {
+  transform: translateX(18px);
+  background-color: var(--dark);
+  box-shadow: none;
 }
 
 @media (max-width: 550px) {
