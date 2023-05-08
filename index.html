@@ -12,23 +12,24 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Leonardo Santucho | Home</title>
 </head>
-<body class="container" >
+<body class="container" onload="onLoad()" >
 
     <header>
         <nav class="navigation">
             <div class="nav-link">                
                 <i class="fa-solid fa-bars"></i>
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="./pages/portfolio.html">Proyectos</a></li>
-                    <li><a href="./pages/career.html">Carrera</a></li>
-                    <li><a href="./pages/about-me.html">Acerca</a></li>
-                    <li><a href="./pages/contact-me.html">Contacto</a></li>
-
+                    <li><a href="/index.html" id="navHome">Inicio</a></li>
+                    <li><a href="./pages/portfolio.html" id="navPortfolio">Proyectos</a></li>
+                    <li><a href="./pages/career.html" id="navCareer">Carrera</a></li>
+                    <li><a href="./pages/about-me.html" id="navAbout">Acerca</a></li>
+                    <li><a href="./pages/contact-me.html" id="navContactMe">Contacto</a></li>
                 </ul>
             </div>
 
+           
             <div class="nav-button">
+                <button type="button" class="btn btn-secondary" id="navLanguage" value="en" onclick="langButtonChange(this)">ENG</button>
                 <div class="toggle-switch">
                     <label for="theme-switch">
                         <input id="theme-switch" class="" type='checkbox'>                
@@ -47,17 +48,17 @@
                     <h2>IT Manager | IT Project Lead | Scrum Master | Agile | PM | IT Service Delivery Lead | Web Developer</h2>
                 </div>
                 <div>
-                    <h1>Hola! Soy Leonardo Santucho...</h1>
+                    <h1 id="homePresentacion">Hola! Soy Leonardo Santucho...</h1>
                 </div>
                 <div>
-                    <p>...apasionado por la tecnología y la innovación con muchas ganas de aportar nuevas ideas. Disfruto mucho el trabajo en equipo construyendo siempre una cultura 100% colaborativa.
+                    <p id="homeResumen">...apasionado por la tecnología y la innovación con muchas ganas de aportar nuevas ideas. Disfruto mucho el trabajo en equipo construyendo siempre una cultura 100% colaborativa.
                         Me encantan los cambios y oportunidades, dispuesto a proponer y mejoras procesos. </p>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a class="btn-talk animate__animated animate__fadeInLeft" href="mailto:leosantucho@gmail.com">Hablamos</a>
+                    <a id="homeBtnHablamos" class="btn-talk animate__animated animate__fadeInLeft" href="mailto:leosantucho@gmail.com">Hablamos</a>
                     <button class="btn-cv animate__animated animate__fadeInRight">
                         <span>
-                            <a class="lnk-nodecoration" href="./files/CV - Leonardo Santucho.pdf" target="_blank" >Curriculum</a>
+                            <a id="homeBtnCV" class="lnk-nodecoration" href="./files/CV - Leonardo Santucho.pdf" target="_blank" >Curriculum</a>
                         </span>
                     </button>
                 </div>
@@ -66,9 +67,9 @@
                 <img class="img-fluid" src="./multimedia/img/my-profile-photo-crop.png" alt="Foto de perfil de Leonardo Santucho"> 
             </div>          
         </div>
-        <hr class="divider-small">  
+        <!-- <hr class="divider-small">   -->
         <!-- Muestra el nivel de habilidades mas importantes adquiridas -->
-        <div class="card-skills row">
+        <!-- <div class="card-skills row">
             <div class="col-12">
                 <div>
                     <label class="form-label">Gestión de Proyectos de TI</label>
@@ -89,12 +90,12 @@
                     <div class="progress-bar" style="width: 95%"></div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     
     <footer class="footer">
         <div class="footer__copyright">
-            <p>© 2023 - Desarrollado por Leonardo Santucho</p>    
+            <p id="footCopy">© 2023 - Desarrollado por Leonardo Santucho</p>    
         </div>   
         <div class="footer__network">
             <ul class="footer__network__ul">
@@ -107,6 +108,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/multilanguage.js"></script>
 
 </body>
 </html>

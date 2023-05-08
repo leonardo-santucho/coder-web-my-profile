@@ -1,0 +1,37 @@
+{
+	"en": {
+		"navHome": "Home",
+        "navPortfolio": "Portfolio",
+        "navCareer": "Career",
+        "navAbout": "About",
+        "navContactMe": "Contact",
+		"navLanguage": "ESP",
+        "footCopy": "© 2023 - Developed by Leonardo Santucho",
+        "homePresentacion": "Hi! I'm Leonardo Santucho...",
+        "homeResumen": "...",
+        "homeBtnHablamos": "Talk!",
+        "homeBtnCV": "Resume",
+        "portfolioMiWebPersonalTitulo": "My personal website",
+        "portfolioMiWebPersonalDescripcion": "Website about me. I developed it by applying the knowledge which I learned in the Coderhouse's Web Development course.",
+        "portfolioTicketSuppliesTitulo": "Ticket Supplier",
+        "portfolioTicketSuppliesDescripcion": "Company specialized in the production of self-adhesive labels and paper supplies for commercial and banking transactions and the Gaming sector."
+	},
+	
+	"es": {
+		"navHome": "Inicio",
+        "navPortfolio": "Proyectos",
+        "navCareer": "Carrera",
+        "navAbout": "Acerca",
+        "navContactMe": "Contacto",
+		"navLanguage": "ENG",
+        "footCopy": "© 2023 - Desarrollado por Leonardo Santucho",
+        "homePresentacion": "Hola! Soy Leonardo Santucho",
+        "homeResumen": "...apasionado por la tecnología y la innovación con muchas ganas de aportar nuevas ideas. Disfruto mucho el trabajo en equipo construyendo siempre una cultura 100% colaborativa. Me encantan los cambios y oportunidades, dispuesto a proponer y mejoras procesos.",
+        "homeBtnHablamos": "Hablamos",
+        "homeBtnCV": "Curriculum",
+        "portfolioMiWebPersonalTitulo": "Mi web personal",
+        "portfolioMiWebPersonalDescripcion": "Sitio con información de mi perfil. Lo desarrollé aplicando conocimientos aprendidos en el curso Desarrollo Web de Coderhouse.",
+        "portfolioTicketSuppliesTitulo": "Ticket Supplier",
+        "portfolioTicketSuppliesDescripcion": "Empresa especializada en producción de etiquetas autoadhesivas e insumos de papel para transacciones comerciales, bancarias y sector Gaming."
+    }
+}
