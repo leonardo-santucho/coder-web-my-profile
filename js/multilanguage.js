@@ -1,6 +1,8 @@
 // MultiLang - BdR 2016
 // JavaScript object to handle multilanguage, load phrases from JSON etc.
 
+let languageSelected = "es";
+
 var MultiLang = function(url, lang, onload)
 {
 	// variables
@@ -85,6 +87,8 @@ var multilang;
 function onLoad() {
 	// create object, load JSON file, default to 'nl', and callback to initList when ready loading
 	multilang = new MultiLang('./json/languages.json', 'es', this.initList);
+
+
 
 	refreshLabels();
 
